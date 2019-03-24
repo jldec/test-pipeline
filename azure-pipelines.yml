@@ -1,6 +1,9 @@
 steps:
 - bash: npm install
+  displayName: install
 - bash: npm test
   env: 
     TEST_SECRET: $(test.secret)
+  displayName: test
 - bash: npm run lint
+  displayName: lint
