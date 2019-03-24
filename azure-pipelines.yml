@@ -1,9 +1,57 @@
+strategy:
+  matrix:
+    linux_node11:
+      imageName: 'ubuntu-16.04'
+      node_version: 11.x
+    mac_node11:
+      imageName: 'macos-10.13'
+      node_version: 11.x
+    windows_node11:
+      imageName: 'vs2017-win2016'
+      node_version: 11.x
+    linux_node10:
+      imageName: 'ubuntu-16.04'
+      node_version: 10.x
+    mac_node10:
+      imageName: 'macos-10.13'
+      node_version: 10.x
+    windows_node10:
+      imageName: 'vs2017-win2016'
+      node_version: 10.x
+    linux_node8:
+      imageName: 'ubuntu-16.04'
+      node_version: 8.x
+    mac_node8:
+      imageName: 'macos-10.13'
+      node_version: 8.x
+    windows_node8:
+      imageName: 'vs2017-win2016'
+      node_version: 8.x
+    linux_node6:
+      imageName: 'ubuntu-16.04'
+      node_version: 6.x
+    mac_node6:
+      imageName: 'macos-10.13'
+      node_version: 6.x
+    windows_node6:
+      imageName: 'vs2017-win2016'
+      node_version: 6.x
+
+pool:
+  vmImage: $(imageName)
+
 steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: $(node_version)
+
 - bash: npm install
   displayName: install
+
 - bash: npm test
   env: 
     TEST_SECRET: $(test.secret)
   displayName: test
+
 - bash: npm run lint
   displayName: lint
