@@ -1,4 +1,5 @@
 ## test-pipeline
+[![Build Status](https://dev.azure.com/jldec/test-pipeline/_apis/build/status/jldec.test-pipeline?branchName=master)](https://dev.azure.com/jldec/test-pipeline/_build/latest?definitionId=2&branchName=master)
 
 Simple js module for testing secrets in CI. Used in this [Azure test-pipeline](https://dev.azure.com/jldec/test-pipeline).
 
