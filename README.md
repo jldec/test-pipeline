@@ -1,5 +1,6 @@
 ## test-pipeline
-[![Build Status](https://dev.azure.com/jldec/test-pipeline/_apis/build/status/jldec.test-pipeline?branchName=master)](https://dev.azure.com/jldec/test-pipeline/_build/latest?definitionId=2&branchName=master)
+[![Build Status Azure Pipelines](https://dev.azure.com/jldec/test-pipeline/_apis/build/status/jldec.test-pipeline?branchName=master)](https://dev.azure.com/jldec/test-pipeline/_build/latest?definitionId=2&branchName=master)
+[![Build Status Travis CI](https://travis-ci.org/jldec/test-pipeline.svg?branch=master)](https://travis-ci.org/jldec/test-pipeline)
 
 Simple js module for testing secrets in CI. Used in this [Azure test-pipeline](https://dev.azure.com/jldec/test-pipeline).
 
