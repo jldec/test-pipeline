@@ -17,7 +17,7 @@ Click on the padlock next to the value.
 ```sh
 $ TEST_SECRET=booger npm test
 
-> test-pipeline@0.0.1 test /Users/jleschner/azure/test-pipeline
+> test-pipeline@0.0.1 test ~/azure/test-pipeline
 > tape test/*.js
 
 TAP version 13
@@ -36,7 +36,7 @@ ok 1 should be equivalent
 ```sh
 $ TEST_SECRET=wooger npm test
 
-> test-pipeline@0.0.1 test /Users/jleschner/azure/test-pipeline
+> test-pipeline@0.0.1 test ~/azure/test-pipeline
 > tape test/*.js
 
 TAP version 13
@@ -48,18 +48,18 @@ not ok 1 should be equivalent
     operator: deepEqual
     expected: [ 3, 'booger' ]
     actual:   [ 3, 'wooger' ]
-    at: Test.<anonymous> (/Users/jleschner/azure/test-pipeline/test/test-test-pipeline.js:12:5)
+    at: Test.<anonymous> (~/azure/test-pipeline/test/test-test-pipeline.js:12:5)
     stack: |-
       Error: should be equivalent
-          at Test.assert [as _assert] (/Users/jleschner/azure/test-pipeline/node_modules/tape/lib/test.js:226:54)
-          at Test.bound [as _assert] (/Users/jleschner/azure/test-pipeline/node_modules/tape/lib/test.js:77:32)
-          at Test.tapeDeepEqual (/Users/jleschner/azure/test-pipeline/node_modules/tape/lib/test.js:423:10)
-          at Test.bound [as deepEqual] (/Users/jleschner/azure/test-pipeline/node_modules/tape/lib/test.js:77:32)
-          at Test.<anonymous> (/Users/jleschner/azure/test-pipeline/test/test-test-pipeline.js:12:5)
-          at Test.bound [as _cb] (/Users/jleschner/azure/test-pipeline/node_modules/tape/lib/test.js:77:32)
-          at Test.run (/Users/jleschner/azure/test-pipeline/node_modules/tape/lib/test.js:96:10)
-          at Test.bound [as run] (/Users/jleschner/azure/test-pipeline/node_modules/tape/lib/test.js:77:32)
-          at Immediate.next [as _onImmediate] (/Users/jleschner/azure/test-pipeline/node_modules/tape/lib/results.js:75:19)
+          at Test.assert [as _assert] (~/azure/test-pipeline/node_modules/tape/lib/test.js:226:54)
+          at Test.bound [as _assert] (~/azure/test-pipeline/node_modules/tape/lib/test.js:77:32)
+          at Test.tapeDeepEqual (~/azure/test-pipeline/node_modules/tape/lib/test.js:423:10)
+          at Test.bound [as deepEqual] (~/azure/test-pipeline/node_modules/tape/lib/test.js:77:32)
+          at Test.<anonymous> (~/azure/test-pipeline/test/test-test-pipeline.js:12:5)
+          at Test.bound [as _cb] (~/azure/test-pipeline/node_modules/tape/lib/test.js:77:32)
+          at Test.run (~/azure/test-pipeline/node_modules/tape/lib/test.js:96:10)
+          at Test.bound [as run] (~/azure/test-pipeline/node_modules/tape/lib/test.js:77:32)
+          at Immediate.next [as _onImmediate] (~/azure/test-pipeline/node_modules/tape/lib/results.js:75:19)
           at processImmediate (timers.js:632:19)
   ...
 
