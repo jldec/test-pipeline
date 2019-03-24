@@ -21,4 +21,6 @@ steps:
 
 - bash: npm install
 - bash: npm test
+  env: 
+    TEST_SECRET: $(test.secret)
 - bash: npm run lint
