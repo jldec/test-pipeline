@@ -1,0 +1,21 @@
+{
+  "name": "test-pipeline",
+  "version": "0.0.1",
+  "description": "test azure pipelines",
+  "main": "test-pipeline.js",
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "^4.10.1",
+    "eslint": "^5.15.3"
+  },
+  "scripts": {
+    "test": "tape test/*.js",
+    "lint": "eslint test-pipeline.js test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jldec/test-pipeline.git"
+  },
+  "author": "jurgen leschner",
+  "license": "MIT"
+}
